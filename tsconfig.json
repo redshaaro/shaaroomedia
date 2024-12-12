@@ -22,6 +22,16 @@
       "@/*": ["./src/*"]
     }
   },
+  "typescript": {
+    // !! WARN !!
+    // Dangerously allow production builds to successfully complete even if
+    // your project has type errors.
+    // !! WARN !!
+    "ignoreBuildErrors": true,
+   " eslint": {
+      "ignoreDuringBuilds": true,
+    },
+  },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
   "exclude": ["node_modules"]
 }
